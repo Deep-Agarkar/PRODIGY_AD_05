@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_below="@id/previewView"
+        android:layout_marginTop="10dp"
+        android:text="Scan Result"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/openLinkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Link"
+        android:visibility="gone"
+        android:layout_below="@id/resultText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
